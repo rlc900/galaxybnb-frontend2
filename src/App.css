@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+overflow-y: auto !important;
+font-family: 'Star Jedi', serif;
 }
 
 .App-logo {
@@ -12,6 +13,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +30,239 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ui.form .field>label {
+  color: white;
+}
+
+h1.ui.header {
+  font-family: 'Star Jedi', serif;
+  font-size: 400%;
+  color: white;
+  /* background-image: '../space.gif'; */
+
+  background: radial-gradient(circle, rgba(255,0,0,1) 10%, rgba(0,0,0,1) 50%, rgba(255,0,0,1) 97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* LOGIN FORM START */
+.ui.header {
+  font-family: 'Star Jedi', serif;
+  color: white;
+}
+
+.ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  font-size: 200%;
+}
+
+.ui.form input[type=text],.ui.form input[type=password] {
+  width: 100%;
+}
+
+.ui.form {
+    text-align: center;
+}
+/* LOGIN FORM END */
+
+/* PROFILE START */
+
+h2 {
+  color: #ff695e;
+  text-align: center;
+}
+
+/* .ui.card>.content {
+  background-color: red;
+} */
+
+/* PROFILE END */
+
+/* .label['Review'] {
+  width: 100vh;
+} */
+
+
+.ui.fluid.dropdown {
+  margin-left: 78.5vh;
+    /* display: block;
+    width: 100%;
+    min-width: 0;
+ */
+}
+
+/* PLANETLOCATIONS */
+
+h1:first-child {
+  text-align: center;
+  color: #ff695e;
+  font-family: 'Star Jedi', serif;
+}
+
+
+
+
+.ui.card,
+.ui.cards>.card {
+  background-color: white;
+
+}
+
+
+.ui.card>.content>.header:not(.ui), .ui.cards>.card>.content>.header:not(.ui) {
+    font-weight: 700;
+    font-size: 1.28571429em;
+    margin-top: 1em;
+    line-height: 1.28571429em;
+    font-family: 'Star Jedi', serif;
+    /* background-color: red; */
+ }
+
+img.ui.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* opacity: 0.5; */
+  width: 50%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Star Jedi', serif;
+    line-height: 1.28571429em;
+    margin: calc(2rem - .14285714em) 0 1rem;
+    font-weight: 700;
+    padding: 0;
+}
+
+
+
+/* END OF PLANETLOCATIONS */
+
+
+
+/* START OF BOOKING FORM */
+
+.ui.form .field>.selection.dropdown {
+  width: 14%
+}
+
+.ui.form .field .ui.input input,
+.ui.form .fields .field .ui.input input {
+  width: 50%
+}
+
+.ui.inverted.menu .item,
+.ui.inverted.menu .item>a:not(.ui) {
+  color: white;
+  font-family: 'Star Jedi', arial;
+}
+
+.ui.inverted.red.button {
+    left: auto;
+    right: 0;
+    font-family: 'Star Jedi', arial;
+    font-size: small;
+}
+
+.ui.form .field>label {
+  font-family: 'Star Jedi', arial;
+}
+
+.dateForm {
+   display: block !important;
+   margin-left: auto !important;
+   margin-right: auto !important;
+}
+
+.div-error {
+  color: #ff695e;
+  font-family: 'Star Jedi', serif;
+}
+/* END OF BOOKING FORM */
+
+/* START Review MODAL */
+
+.review {
+  font-family: 'Star Jedi', serif;
+}
+
+.ui.modal>.header:not(.ui) {
+  font-family: 'Star Jedi', serif;
+}
+
+/* end review modal */
+
+
+
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) no-repeat center center fixed;
+  background-size: cover;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+    z-index:3;
+
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
 }
