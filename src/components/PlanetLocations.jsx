@@ -125,6 +125,10 @@ class PlanetLocations extends Component {
     })
   }
 
+  // disableReview = () => {
+  //   if ()
+  // }
+
   renderLocations = (state) => {
     let {datesRange, numOfTravelers} = this.props.stateFromMain
     let {name} = this.props.stateFromMain.planetObj
@@ -163,7 +167,14 @@ class PlanetLocations extends Component {
               </Modal>
 
               <Modal trigger={
-                <Button inverted color='red'>
+                // <Button inverted color='red'>
+                // <Button.Content visible>Reviews</Button.Content>
+                // </Button>
+                <Button
+                  disabled={ this.props.stateFromMain.token ? false : true}
+                  circular={true}
+                  inverted color='red'
+                >
                 <Button.Content visible>Reviews</Button.Content>
                 </Button>
                 }>
@@ -192,7 +203,7 @@ class PlanetLocations extends Component {
   render() {
     // debugger;
     // console.log('STATE FROM PLANET_LOCATIONS', this.state.planetObj)
-    console.log('PROPS FROM PLANET_LOCATIONS', this.props.stateFromMain);
+    // console.log('PROPS FROM PLANET_LOCATIONS', this.props.stateFromMain);
     // console.log(this.state);
     // console.log('PROPS FROM PLANET_LOCATIONS', this.props.stateFromMain.planetObj.locations)
     let {name} = this.props.stateFromMain.planetObj

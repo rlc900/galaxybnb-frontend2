@@ -2,7 +2,7 @@ import React from 'react';
 
 // review = reviewObj passed down from PlanetLocations
 const Review = (props) => {
-  console.log('line 5', props)
+  // console.log('line 5', props)
 
   // const renderLocationReview = () => {
     // console.log(props.locationId, props.review.reviewed_location_id)
