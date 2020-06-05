@@ -42,7 +42,7 @@ class Profile extends Component {
   }
 
   render() {
-    console.log(this.props.stateFromMain.user.locationsBooked);
+    // console.log(this.props.stateFromMain.user.locationsBooked);
     let {user} = this.props.stateFromMain
     return (
       <div>

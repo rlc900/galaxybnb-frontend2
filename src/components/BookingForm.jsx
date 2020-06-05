@@ -95,7 +95,7 @@ class BookingForm extends Component {
 
   render() {
     // console.log(this.state)
-    console.log(this.props.stateFromMain)
+    // console.log(this.props.stateFromMain)
     return (
       <div className='booking-form' align='center'>
 

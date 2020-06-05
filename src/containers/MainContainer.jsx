@@ -170,7 +170,7 @@ renderForm = (routerProps) => {
 
 
   render() {
-    console.log('MAIN CONT STATE', this.state)
+    // console.log('MAIN CONT STATE', this.state)
     // console.log('STATE FROM MAIN_CONTAINER', this.state)
     return (
       <div className='main-container'>
