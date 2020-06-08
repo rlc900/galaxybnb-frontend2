@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import StarJedi from './StarJedi.ttf'
+import Starjedi from './Starjedi.ttf'
 
 export default createGlobalStyle`
   @font-face {
@@ -8,6 +8,6 @@ export default createGlobalStyle`
     font-style: normal;
     font-weight: 400;
     src: local('Star Jedi'), local('StarJedi-Regular'),
-        url(${StarJedi}) format('ttf');
+        url(${Starjedi}) format('ttf');
   }
 `;
