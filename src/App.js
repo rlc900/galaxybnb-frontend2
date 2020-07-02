@@ -1,6 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import './index.css'
 import GlobalFonts from './fonts/fonts.js'
 import MainContainer from './containers/MainContainer'
 
